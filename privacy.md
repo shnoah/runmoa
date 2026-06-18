@@ -1,69 +1,83 @@
-# RunMoa 개인정보처리방침
+# RunMoa Privacy Policy
 
-Last updated: June 11, 2026
+Last updated: June 18, 2026
 
-## 개요
+Public web version: `https://shnoah.github.io/runmoa/privacy/`
 
-RunMoa는 Apple 건강에 저장된 러닝 기록을 iPhone에서 보기 쉽게 정리하는 로컬 우선 앱입니다.
+## Overview
 
-RunMoa는 계정 생성을 요구하지 않으며, 광고 추적 SDK, 외부 분석 SDK, 소셜 추적 기능을 포함하지 않습니다.
+RunMoa is an iPhone app that reads running workouts from Apple Health and presents them in a runner-focused format.
 
-RunMoa는 Apple 건강 러닝 데이터, 경로, 심박, 메모, 신발 데이터를 개발자 서버로 업로드하지 않습니다.
+RunMoa does not require account creation.
+RunMoa does not include advertising SDKs or social tracking.
+RunMoa does not upload Apple Health running data, workout routes, heart rate samples, run notes, or shoe data to a developer server.
+RunMoa uses Firebase Analytics and Firebase Crashlytics to understand app usage and diagnose crashes.
 
-## 읽는 건강 데이터
+## Health Data We Read
 
-사용자가 Apple 건강 접근을 허용하면 RunMoa는 러닝 화면과 계산을 위해 아래 항목을 읽을 수 있습니다.
+When you allow Apple Health access, RunMoa may read:
 
-- 러닝 기록
-- 러닝 경로
-- 심박수 및 안정시 심박수
+- Running workouts
+- Workout routes
+- Heart rate
+- Resting heart rate
 - VO2 Max
-- 걷기/달리기 거리와 걸음 수
-- 지원되는 iOS/watchOS에서 제공되는 workout effort 또는 estimated workout effort
+- Distance walking/running
+- Step count
+- Workout effort when available on supported iOS/watchOS versions
 
-이 데이터는 요약, 러닝 컨디션, 심박 존, 상세 차트, 최고 기록, 신발 기록, 공유 이미지 화면을 앱 안에서 보여주기 위해 iPhone에서 처리됩니다.
+RunMoa reads these items only to render summaries, running readiness, heart rate zones, detailed charts, personal record tracking, shoe assignment views, and sharing layouts on the iPhone.
 
-## 기기 안에 저장되는 데이터
+## Data Stored On Device
 
-- 앱 설정
-- 심박 존 설정
-- 신발 이름, 모델, 교체 기준, 표시 순서, 러닝-신발 연결
-- 사용자가 작성한 러닝 메모
-- 상세 첫 카드 지표 설정
-- 최고 기록 검토 결과
-- 평균 심박, 평균 케이던스, 상승 고도, 상세 차트 데이터 같은 파생 요약/캐시 값
+RunMoa stores the following data locally on the iPhone:
 
-이 로컬 보조 파일은 앱 컨테이너 안에 저장되며, 가능한 경우 자동 iCloud/Finder 백업 대상에서 제외됩니다.
+- App settings
+- Heart rate zone preferences
+- Shoe names, models, mileage targets, display order, and shoe-to-run assignments
+- Run notes you write
+- Personal record review results
+- Derived summary and detail cache values such as average heart rate, average cadence, elevation gain, chart data, and heart rate zone profile cache
 
-## 업로드하지 않는 데이터
+These local support files are stored in the app container with the automatic iCloud/Finder backup exclusion flag set.
 
-- Apple 건강 러닝 원본 데이터
-- 운동 경로 좌표
-- 심박 샘플
-- 페이스, 스플릿, 상세 차트 샘플
-- 사용자가 작성한 러닝 메모와 신발 정보
-- 파생 요약 및 상세 캐시 값
+## Data Not Uploaded
 
-## 사용자가 직접 실행하는 공유
+RunMoa does not currently upload the following to a server:
 
-RunMoa는 사용자가 명시적으로 선택한 export 동작에서만 데이터를 외부 앱이나 파일로 전달합니다.
+- Apple Health running data
+- Workout route coordinates
+- Heart rate samples
+- Pace or split history
+- Run notes and shoe data
+- Derived summary and detail cache values
 
-- 생성한 PNG 공유 이미지를 클립보드에 복사
-- 생성한 PNG 공유 이미지를 파일로 저장
-- 신발 정보와 표시 순서, 러닝-신발 연결, 사용자가 작성한 메모, 상세 첫 카드 지표 설정만 포함하는 개인 백업 JSON을 직접 내보내기
+## Firebase Analytics and Crash Diagnostics
 
-## 사용자 제어
+RunMoa uses Firebase Analytics and Firebase Crashlytics in distributed TestFlight and App Store builds. These services may collect usage data, crash reports, stack traces, device and operating system information, app version, and diagnostic metadata needed to monitor app stability and understand feature usage.
 
-- Apple 건강 접근 권한은 설정 > 건강 > 데이터 접근 및 기기 > RunMoa에서 변경할 수 있습니다.
-- 앱 설정에서 신발 데이터, 개인 백업, 분석 캐시를 관리할 수 있습니다.
-- 앱을 삭제하면 앱 컨테이너에 저장된 로컬 데이터가 제거됩니다.
+RunMoa does not attach Apple Health workout details, route coordinates, heart rate samples, run notes, shoe data, or user IDs to Firebase reports.
 
-## 고지
+## Data Sharing
 
-VO2 Max, 예상 기록, 러닝 컨디션은 훈련 참고용 추정치이며 실제 경기력과 다를 수 있습니다.
+RunMoa shares data externally only when you explicitly choose an export action.
 
-RunMoa는 러닝 기록을 보기 쉽게 정리하는 용도이며, 의료적 판단이나 진단을 위한 앱이 아닙니다.
+Examples:
 
-## 문의
+- Copying a generated PNG share image to the clipboard
+- Exporting a generated PNG share image to Files through the document picker
+- Sharing a personal backup JSON file yourself, containing only shoe data and display order, run-to-shoe assignments, run notes you wrote, and first-card detail metric settings
 
-RunMoa 지원 문의: pnr.run.apps@gmail.com
+## Your Controls
+
+You can:
+
+- Revoke Apple Health access in `Settings > Health > Data Access & Devices > RunMoa`
+- Delete shoe data from the in-app Settings screen
+- Export or import a personal backup JSON file from the in-app Settings screen
+- Clear derived analysis cache from the in-app Settings screen
+- Delete the app to remove app-local data stored in the app container
+
+## Contact
+
+For RunMoa privacy questions, contact: `pnr.run.apps@gmail.com`
