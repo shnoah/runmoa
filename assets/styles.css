@@ -223,6 +223,7 @@ h3 {
   position: relative;
   justify-self: end;
   width: min(100%, 430px);
+  margin: 0;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 36px;
@@ -524,7 +525,7 @@ h3 {
     min-height: 64px;
   }
 
-  .brand span {
+  .site-header .brand span {
     display: none;
   }
 
@@ -536,6 +537,10 @@ h3 {
     min-height: auto;
     grid-template-columns: 1fr;
     padding: 64px 0 72px;
+  }
+
+  .hero > * {
+    min-width: 0;
   }
 
   .hero h1 {
