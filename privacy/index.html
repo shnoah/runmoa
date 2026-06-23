@@ -1,139 +1,25 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RunMoa 개인정보처리방침</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #0f1720;
-      --surface: #17212c;
-      --text: #f5f7fb;
-      --muted: #aab4c3;
-      --accent: #6ee7b7;
-      --line: rgba(255, 255, 255, 0.12);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.62;
-    }
-
-    main {
-      width: min(760px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 56px 0 72px;
-    }
-
-    header {
-      margin-bottom: 34px;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 34px 0 12px;
-      font-size: 1.25rem;
-      letter-spacing: 0;
-    }
-
-    p,
-    li {
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    .updated {
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    section {
-      border-top: 1px solid var(--line);
-      padding-top: 6px;
-    }
-  </style>
+  <meta name="description" content="RunMoa의 Apple 건강 데이터, 로컬 저장과 Firebase 통계 및 크래시 진단 처리 방식을 확인하세요.">
+  <link rel="canonical" href="https://shnoah.github.io/runmoa/privacy/">
+  <meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="RunMoa"><meta property="og:title" content="RunMoa 개인정보처리방침"><meta property="og:description" content="RunMoa의 데이터 처리와 사용자 제어 방식을 확인하세요."><meta property="og:url" content="https://shnoah.github.io/runmoa/privacy/"><meta property="og:image" content="https://shnoah.github.io/runmoa/assets/runmoa-icon.png">
+  <link rel="icon" type="image/png" href="../assets/runmoa-icon.png"><link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>RunMoa 개인정보처리방침</h1>
-      <p class="updated">최종 업데이트: 2026년 6월 18일</p>
-      <p>RunMoa는 Apple 건강에 저장된 러닝 기록을 iPhone에서 러너 중심으로 정리해 보여주는 앱입니다.</p>
-    </header>
-
-    <section>
-      <h2>개요</h2>
-      <p>RunMoa는 계정 생성을 요구하지 않으며 광고 SDK나 소셜 추적 기능을 포함하지 않습니다.</p>
-      <p>Apple 건강 러닝 기록, 경로 좌표, 심박 샘플, 러닝 메모, 신발 데이터는 개발자 서버로 업로드하지 않습니다.</p>
-      <p>앱 안정성과 사용 흐름을 이해하기 위해 Firebase Analytics와 Firebase Crashlytics를 사용합니다.</p>
-    </section>
-
-    <section>
-      <h2>읽는 건강 데이터</h2>
-      <p>사용자가 Apple 건강 접근을 허용하면 RunMoa는 다음 항목을 읽을 수 있습니다.</p>
-      <ul>
-        <li>러닝 워크아웃</li>
-        <li>러닝 경로</li>
-        <li>심박수와 안정시 심박수</li>
-        <li>VO2 Max</li>
-        <li>걷기/달리기 거리와 걸음 수</li>
-        <li>지원되는 iOS/watchOS의 운동 노력 데이터</li>
-      </ul>
-      <p>이 데이터는 iPhone 안에서 러닝 요약, 러닝 컨디션, 심박 존, 상세 차트, 개인 기록, 신발 연결, 공유 이미지 표시를 만드는 데 사용됩니다.</p>
-    </section>
-
-    <section>
-      <h2>기기 안에 저장되는 데이터</h2>
-      <p>RunMoa는 앱 설정, 심박 존 설정, 신발 정보와 표시 순서, 러닝-신발 연결, 사용자가 작성한 러닝 메모, 개인 기록 검토 결과, 평균 심박/케이던스/상승 고도/상세 차트 같은 파생 요약과 캐시를 iPhone 앱 컨테이너에 저장합니다.</p>
-      <p>이 로컬 보조 파일에는 iOS 파일 보호를 적용하고 자동 iCloud/Finder 백업 대상에서 제외되도록 저장합니다.</p>
-    </section>
-
-    <section>
-      <h2>Firebase 통계와 크래시 진단</h2>
-      <p>RunMoa는 TestFlight와 App Store 배포 빌드에서 Firebase Analytics와 Firebase Crashlytics를 사용합니다. 이 서비스는 앱 사용 통계, 크래시 보고서, 스택 트레이스, 기기 및 운영체제 정보, 앱 버전, 진단 메타데이터를 수집할 수 있습니다.</p>
-      <p>RunMoa는 Apple 건강 운동 세부 정보, 경로 좌표, 심박 샘플, 러닝 메모, 신발 데이터, 사용자 ID를 Firebase 보고서에 직접 첨부하지 않습니다.</p>
-    </section>
-
-    <section>
-      <h2>사용자가 직접 내보내는 데이터</h2>
-      <p>RunMoa는 사용자가 명시적으로 선택한 경우에만 데이터를 외부 앱으로 전달합니다.</p>
-      <ul>
-        <li>생성한 PNG 공유 이미지를 클립보드에 복사</li>
-        <li>생성한 PNG 공유 이미지를 파일로 저장</li>
-        <li>신발 정보, 표시 순서, 러닝-신발 연결, 메모, 상세 첫 카드 지표 설정만 담은 개인 데이터 백업 JSON 공유</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>사용자 제어</h2>
-      <ul>
-        <li>Apple 건강 접근 권한은 설정 앱 &gt; 건강 &gt; 데이터 접근 및 기기 &gt; RunMoa에서 변경할 수 있습니다.</li>
-        <li>앱 설정에서 신발 데이터 삭제, 개인 데이터 백업 내보내기/가져오기, 분석 캐시 삭제를 할 수 있습니다.</li>
-        <li>앱을 삭제하면 앱 컨테이너에 저장된 로컬 보조 데이터도 제거됩니다.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>문의</h2>
-      <p>개인정보 관련 문의: <a href="mailto:pnr.run.apps@gmail.com">pnr.run.apps@gmail.com</a></p>
-    </section>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header"><nav class="nav-shell" aria-label="주요 메뉴"><a class="brand" href="../" aria-label="RunMoa 홈"><img src="../assets/runmoa-icon.png" alt="" width="34" height="34"><span>RunMoa</span></a><div class="nav-links"><a href="../#features">기능</a><a href="../faq/">FAQ</a><a href="../support/">지원</a><a class="nav-cta" href="https://apps.apple.com/kr/app/runmoa/id6776083533">App Store에서 받기</a></div></nav></header>
+  <main id="main" class="document-shell">
+    <header class="document-hero"><p class="eyebrow">Privacy</p><h1>RunMoa 개인정보처리방침</h1><p class="updated">최종 업데이트: 2026년 6월 18일</p><p>RunMoa는 Apple 건강에 저장된 러닝 기록을 iPhone에서 러너 중심으로 정리해 보여주는 앱입니다.</p></header>
+    <section class="document-section"><h2>개요</h2><p>RunMoa는 계정 생성을 요구하지 않으며 광고 SDK나 소셜 추적 기능을 포함하지 않습니다.</p><p>Apple 건강 러닝 기록, 경로 좌표, 심박 샘플, 러닝 메모, 신발 데이터는 개발자 서버로 업로드하지 않습니다.</p><p>앱 안정성과 사용 흐름을 이해하기 위해 Firebase Analytics와 Firebase Crashlytics를 사용합니다.</p></section>
+    <section class="document-section"><h2>읽는 건강 데이터</h2><p>사용자가 Apple 건강 접근을 허용하면 RunMoa는 다음 항목을 읽을 수 있습니다.</p><ul><li>러닝 워크아웃</li><li>러닝 경로</li><li>심박수와 안정시 심박수</li><li>VO2 Max</li><li>걷기/달리기 거리와 걸음 수</li><li>지원되는 iOS/watchOS의 운동 노력 데이터</li></ul><p>이 데이터는 iPhone 안에서 러닝 요약, 러닝 컨디션, 심박 존, 상세 차트, 개인 기록, 신발 연결, 공유 이미지 표시를 만드는 데 사용됩니다.</p></section>
+    <section class="document-section"><h2>기기 안에 저장되는 데이터</h2><p>RunMoa는 앱 설정, 심박 존 설정, 신발 정보와 표시 순서, 러닝-신발 연결, 사용자가 작성한 러닝 메모, 개인 기록 검토 결과, 평균 심박/케이던스/상승 고도/상세 차트 같은 파생 요약과 캐시를 iPhone 앱 컨테이너에 저장합니다.</p><p>이 로컬 보조 파일에는 iOS 파일 보호를 적용하고 자동 iCloud/Finder 백업 대상에서 제외되도록 저장합니다.</p></section>
+    <section class="document-section"><h2>Firebase 통계와 크래시 진단</h2><p>RunMoa는 TestFlight와 App Store 배포 빌드에서 Firebase Analytics와 Firebase Crashlytics를 사용합니다. 이 서비스는 앱 사용 통계, 크래시 보고서, 스택 트레이스, 기기 및 운영체제 정보, 앱 버전, 진단 메타데이터를 수집할 수 있습니다.</p><p>RunMoa는 Apple 건강 운동 세부 정보, 경로 좌표, 심박 샘플, 러닝 메모, 신발 데이터, 사용자 ID를 Firebase 보고서에 직접 첨부하지 않습니다.</p></section>
+    <section class="document-section"><h2>사용자가 직접 내보내는 데이터</h2><p>RunMoa는 사용자가 명시적으로 선택한 경우에만 데이터를 외부 앱으로 전달합니다.</p><ul><li>생성한 PNG 공유 이미지를 클립보드에 복사</li><li>생성한 PNG 공유 이미지를 파일로 저장</li><li>신발 정보, 표시 순서, 러닝-신발 연결, 메모, 상세 첫 카드 지표 설정만 담은 개인 데이터 백업 JSON 공유</li></ul></section>
+    <section class="document-section"><h2>사용자 제어</h2><ul><li>Apple 건강 접근 권한은 설정 앱 &gt; 건강 &gt; 데이터 접근 및 기기 &gt; RunMoa에서 변경할 수 있습니다.</li><li>앱 설정에서 신발 데이터 삭제, 개인 데이터 백업 내보내기/가져오기, 분석 캐시 삭제를 할 수 있습니다.</li><li>앱을 삭제하면 앱 컨테이너에 저장된 로컬 보조 데이터도 제거됩니다.</li></ul></section>
+    <section class="document-section"><h2>문의</h2><p>개인정보 관련 문의: <a href="mailto:pnr.run.apps@gmail.com">pnr.run.apps@gmail.com</a></p></section>
   </main>
-</body>
-</html>
+  <footer class="site-footer"><div class="footer-shell"><div><a class="brand" href="../"><span>RunMoa</span></a><div class="footer-meta">최종 업데이트: 2026년 6월 18일</div></div><div class="footer-links"><a href="../">홈</a><a href="../faq/">FAQ</a><a href="../support/">지원</a><a href="../notices/">공지</a></div></div></footer>
+</body></html>

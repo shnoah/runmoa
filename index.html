@@ -3,70 +3,186 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RunMoa</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #0f1724;
-      --panel: #172334;
-      --text: #f7fafc;
-      --muted: #b7c2d3;
-      --line: rgba(255,255,255,.14);
-      --accent: #4fe0a2;
+  <title>RunMoa | Apple Watch 러닝 기록을 더 편하게</title>
+  <meta name="description" content="Apple Watch 운동 앱의 러닝 기록을 마일리지, VO₂ Max, 예상 기록, 러닝화 관리와 공유 스티커까지 한곳에서 확인하는 iPhone 앱입니다.">
+  <link rel="canonical" href="https://shnoah.github.io/runmoa/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="RunMoa">
+  <meta property="og:title" content="RunMoa | Apple Watch 러닝 기록을 더 편하게">
+  <meta property="og:description" content="새 장비 없이, 지금 있는 러닝 기록을 더 편하게.">
+  <meta property="og:url" content="https://shnoah.github.io/runmoa/">
+  <meta property="og:image" content="https://shnoah.github.io/runmoa/assets/runmoa-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="apple-itunes-app" content="app-id=6776083533">
+  <link rel="icon" type="image/png" href="./assets/runmoa-icon.png">
+  <link rel="apple-touch-icon" href="./assets/runmoa-icon.png">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "RunMoa",
+    "operatingSystem": "iOS 17.0 or later",
+    "applicationCategory": "HealthApplication",
+    "description": "Apple Watch 운동 앱이 Apple 건강에 저장한 러닝 기록을 iPhone에서 보기 쉽게 정리하는 앱입니다.",
+    "url": "https://shnoah.github.io/runmoa/",
+    "downloadUrl": "https://apps.apple.com/kr/app/runmoa/id6776083533",
+    "image": "https://shnoah.github.io/runmoa/assets/runmoa-icon.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #1d3148, var(--bg) 48%);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    main { max-width: 840px; margin: 0 auto; padding: 56px 20px 72px; }
-    h1 { margin: 0 0 8px; font-size: clamp(42px, 8vw, 76px); line-height: 1; letter-spacing: 0; }
-    h2 { margin: 32px 0 12px; font-size: 22px; }
-    p { color: var(--muted); margin: 0 0 14px; }
-    a { color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-    .tag { color: var(--accent); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    .card {
-      background: color-mix(in srgb, var(--panel), transparent 6%);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 22px;
-      margin-top: 22px;
-    }
-    .links { display: grid; gap: 12px; margin-top: 18px; }
-    .links a {
-      display: block;
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255,255,255,.04);
-      font-weight: 800;
-      text-decoration: none;
-    }
-    footer { margin-top: 44px; color: var(--muted); font-size: 14px; }
-  </style>
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <div class="tag">RunMoa</div>
-    <h1>RunMoa</h1>
-    <p>Apple 건강에 저장된 러닝 기록을 iPhone 안에서 깔끔하게 정리하는 로컬 우선 러닝 로그 앱입니다. 계정 생성, 광고 추적, 서버 업로드 없이 동작하며, 앱 안정성과 사용 흐름을 이해하기 위해 Firebase Analytics와 Crashlytics를 사용합니다.</p>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="주요 메뉴">
+      <a class="brand" href="./" aria-label="RunMoa 홈">
+        <img src="./assets/runmoa-icon.png" alt="" width="34" height="34">
+        <span>RunMoa</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">기능</a>
+        <a href="#support">지원 범위</a>
+        <a href="./faq/">FAQ</a>
+        <a class="nav-cta" href="https://apps.apple.com/kr/app/runmoa/id6776083533">App Store에서 받기</a>
+      </div>
+    </nav>
+  </header>
 
-    <section class="card">
-      <h2>안내 페이지</h2>
-      <p>앱 심사와 사용자 안내를 위해 개인정보처리방침, 지원, 공지 페이지를 공개합니다. 각 문서는 RunMoa의 현재 데이터 처리 방식과 지원 안내를 기준으로 유지됩니다.</p>
-      <div class="links">
-        <a href="./privacy/">개인정보처리방침</a>
-        <a href="./support/">지원 및 문의</a>
-        <a href="./notices/">공지 및 업데이트</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Apple Watch 러닝 기록을 더 잘 보는 방법</p>
+        <h1 id="hero-title">새 장비 없이,<br>지금 있는 러닝 기록을 <span>더 편하게.</span></h1>
+        <p class="hero-copy">Apple Watch 운동 앱이 Apple 건강에 저장한 러닝 기록을 마일리지, VO₂ Max, 예상 기록, 러닝화 관리와 공유 스티커까지 한곳에서 확인하세요.</p>
+        <div class="hero-actions">
+          <a class="button-primary" href="https://apps.apple.com/kr/app/runmoa/id6776083533">App Store에서 받기</a>
+          <a class="button-secondary" href="./faq/">자주 묻는 질문</a>
+        </div>
+        <p class="hero-note">iPhone 전용 · 무료</p>
+      </div>
+      <figure class="hero-visual">
+        <img src="./assets/screenshots/home.png" alt="RunMoa 홈에서 월간 목표, 올해 거리, 러닝 준비도, VO₂ Max와 최근 러닝을 확인하는 화면" width="647" height="1400">
+      </figure>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">기록을 더 잘 이해하는 방법</p>
+          <h2 id="features-title">러너에게 필요한 정보만<br>한 흐름으로.</h2>
+        </div>
+        <p>기록을 새로 만들거나 훈련을 지시하지 않습니다. 이미 Apple 건강에 쌓인 러닝을 보기 좋게 정리합니다.</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature-item">
+          <span class="feature-index">01</span>
+          <h3>월간·연간 마일리지</h3>
+          <p>목표와 누적 거리를 함께 보며 러닝 흐름을 확인합니다.</p>
+        </article>
+        <article class="feature-item">
+          <span class="feature-index">02</span>
+          <h3>상세 차트와 스플릿</h3>
+          <p>페이스, 심박, 케이던스와 구간 기록을 자세히 봅니다.</p>
+        </article>
+        <article class="feature-item">
+          <span class="feature-index">03</span>
+          <h3>VO₂ Max와 예상 기록</h3>
+          <p>현재 지표와 기록을 러닝 참고 정보로 살펴봅니다.</p>
+        </article>
+        <article class="feature-item">
+          <span class="feature-index">04</span>
+          <h3>PR과 러닝화 관리</h3>
+          <p>개인 기록과 신발별 누적 거리를 한곳에서 관리합니다.</p>
+        </article>
+        <article class="feature-item">
+          <span class="feature-index">05</span>
+          <h3>공유용 러닝 스티커</h3>
+          <p>거리와 페이스, 경로를 깔끔한 이미지로 남깁니다.</p>
+        </article>
       </div>
     </section>
 
-    <footer>
-      Last updated: June 18, 2026
-    </footer>
+    <section class="section" id="support" aria-label="지원 범위와 개인정보">
+      <div class="support-band">
+        <p class="band-label">공식 지원 범위</p>
+        <div class="band-content">
+          <h2>Apple Watch 운동 앱 기록에 최적화</h2>
+          <p>RunMoa는 iPhone에서 사용하는 앱이며, Apple Watch의 기본 운동 앱이 Apple 건강에 저장한 러닝 기록을 기준으로 완전한 표시와 계산을 지원합니다.</p>
+          <a class="text-link" href="./faq/">지원 범위 자세히 보기</a>
+        </div>
+      </div>
+      <div class="privacy-band">
+        <p class="band-label">개인정보</p>
+        <div class="band-content">
+          <h2>건강 원본은 개발자 서버에 올리지 않습니다.</h2>
+          <p>RunMoa는 별도 계정을 요구하지 않습니다. Apple 건강 러닝 기록, 경로 좌표, 심박 샘플, 러닝 메모와 신발 데이터는 개발자 서버로 업로드하지 않으며, 배포 버전에서는 앱 안정성과 사용 흐름 확인을 위해 Firebase Analytics와 Crashlytics를 사용합니다.</p>
+          <a class="text-link" href="./privacy/">개인정보처리방침 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="screens-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">실제 화면</p>
+          <h2 id="screens-title">기록부터 공유까지<br>가볍고 명확하게.</h2>
+        </div>
+        <p>복잡한 설정 대신, 러닝이 쌓이는 순서대로 필요한 화면을 구성했습니다.</p>
+      </div>
+      <div class="screenshots">
+        <figure class="screenshot-card">
+          <div class="screenshot-frame"><img src="./assets/screenshots/home.png" alt="RunMoa 러닝 요약 홈 화면" width="647" height="1400" loading="lazy"></div>
+          <figcaption>한눈에 보는 러닝 요약</figcaption>
+        </figure>
+        <figure class="screenshot-card">
+          <div class="screenshot-frame"><img src="./assets/screenshots/records.png" alt="RunMoa 월간 러닝 기록 화면" width="647" height="1400" loading="lazy"></div>
+          <figcaption>월별 러닝 기록</figcaption>
+        </figure>
+        <figure class="screenshot-card">
+          <div class="screenshot-frame"><img src="./assets/screenshots/shoes.png" alt="RunMoa 러닝화 마일리지 관리 화면" width="647" height="1400" loading="lazy"></div>
+          <figcaption>러닝화 누적 거리</figcaption>
+        </figure>
+        <figure class="screenshot-card">
+          <div class="screenshot-frame"><img src="./assets/screenshots/share.png" alt="RunMoa 러닝 공유 스티커 화면" width="647" height="1400" loading="lazy"></div>
+          <figcaption>기록을 이미지로 공유</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq-preview" aria-labelledby="faq-title">
+      <div class="faq-preview-intro">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">궁금한 점을<br>짧고 분명하게.</h2>
+        <p>지원 기기, Apple 건강 권한과 데이터 처리 방식을 확인하세요.</p>
+        <a class="text-link" href="./faq/">전체 FAQ 보기</a>
+      </div>
+      <div class="faq-link-list">
+        <a href="./faq/#devices">어떤 기기를 지원하나요?</a>
+        <a href="./faq/#records">어떤 러닝 기록을 완전하게 지원하나요?</a>
+        <a href="./faq/#privacy">건강 데이터가 개발자 서버로 전송되나요?</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>
+        <a class="brand" href="./"><span>RunMoa</span></a>
+        <div class="footer-meta">최종 업데이트: 2026년 6월 23일</div>
+      </div>
+      <div class="footer-links">
+        <a href="./faq/">FAQ</a>
+        <a href="./support/">지원</a>
+        <a href="./privacy/">개인정보처리방침</a>
+        <a href="./notices/">공지</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

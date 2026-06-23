@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shnoah.github.io/runmoa/sitemap.xml
