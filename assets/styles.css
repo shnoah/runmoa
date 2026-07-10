@@ -95,6 +95,7 @@ p { overflow-wrap: break-word; }
   box-shadow: 0 20px 54px rgba(0, 0, 0, 0.2);
 }
 .hero-visual img { width: 100%; height: auto; border-radius: 18px; }
+html[lang="en"] .hero-visual { display: none; }
 
 .section { padding: 88px 0; border-top: 1px solid var(--line-soft); }
 .section-heading { margin-bottom: 46px; }
