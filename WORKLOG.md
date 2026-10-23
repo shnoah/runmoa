@@ -24,3 +24,9 @@
 - Removed named third-party device support claims from the introduction FAQ. The FAQ now describes running workouts saved to Apple Health, read permission, and data-dependent detail availability.
 - Historical work-log entries are retained. Styling, sections, navigation, and app behavior are unchanged.
 - Validation: all three pages retained their HTML structure, links, and JSON-LD; English fallback copy matches the English page; removed support names and emotional phrases are absent. Chrome checks at Korean/English 320/390/1280px passed without horizontal overflow, broken images, or page errors, and FAQ interaction worked; narrow mobile captures were inspected.
+
+## 2026-10-23 — Use the exact product name runmoa
+
+- At the user's request, the introduction uses the exact lowercase Latin name `runmoa` in both languages to distinguish the app from a separate Korean-named product.
+- Replaced the Korean transliteration and mixed-case name in landing headings, navigation, footer, search/social metadata, image/accessibility labels, and application JSON-LD. Historical work-log entries remain intact.
+- Validation: all three introduction pages use `runmoa`; no Korean transliteration or mixed-case product name remains in those files. Structure, links, styling, and app behavior are preserved.
