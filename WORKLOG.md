@@ -16,3 +16,11 @@
 - Versioned the shared stylesheet reference on all pages for consistent styling and cache refresh.
 - Replaced the old promotional screenshot with the app's existing Korean Home onboarding asset, removing the large green framing without generating new App Store screenshots.
 - Validation: Chrome at 320/390/1280px in Korean and English (six cases), with no horizontal overflow, broken images, or page errors; five feature items and FAQ interaction confirmed. Inspected the captured Korean mobile page. HTML changes outside the landing-page copy are stylesheet cache-version changes only.
+
+## 2026-10-23 — Use factual product copy and narrow support wording
+
+- Replaced emotional headlines and section introductions with direct descriptions of the iPhone app and its record, chart, goal, shoe, sticker, photo, and Flyover features in Korean, English, and the root fallback.
+- Added the Korean product name to the Korean page title and introduction heading and aligned search/social descriptions with the functional copy.
+- Removed named third-party device support claims from the introduction FAQ. The FAQ now describes running workouts saved to Apple Health, read permission, and data-dependent detail availability.
+- Historical work-log entries are retained. Styling, sections, navigation, and app behavior are unchanged.
+- Validation: all three pages retained their HTML structure, links, and JSON-LD; English fallback copy matches the English page; removed support names and emotional phrases are absent. Chrome checks at Korean/English 320/390/1280px passed without horizontal overflow, broken images, or page errors, and FAQ interaction worked; narrow mobile captures were inspected.
