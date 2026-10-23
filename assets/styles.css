@@ -73,7 +73,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .button-secondary:hover { border-color: rgba(255, 255, 255, 0.28); background: rgba(255, 255, 255, 0.10); }
 
 .hero {
-  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
   align-items: center; gap: clamp(44px, 8vw, 108px);
   padding: 84px 0 92px;
 }
@@ -99,6 +99,7 @@ p { overflow-wrap: break-word; }
 }
 .hero-visual img { width: 100%; height: auto; border-radius: 18px; }
 html[lang="en"] .hero-visual { display: none; }
+html[lang="en"] .hero { grid-template-columns: minmax(0, 1fr); }
 
 .section { padding: 88px 0; border-top: 1px solid var(--line-soft); }
 .section-heading { margin-bottom: 46px; }
