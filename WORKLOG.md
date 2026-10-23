@@ -30,3 +30,11 @@
 - At the user's request, the introduction uses the exact lowercase Latin name `runmoa` in both languages to distinguish the app from a separate Korean-named product.
 - Replaced the Korean transliteration and mixed-case name in landing headings, navigation, footer, search/social metadata, image/accessibility labels, and application JSON-LD. Historical work-log entries remain intact.
 - Validation: all three introduction pages use `runmoa`; no Korean transliteration or mixed-case product name remains in those files. Structure, links, styling, and app behavior are preserved.
+
+## 2026-10-23 — Clarify product features and pre-install questions
+
+- Preserved the introduction page's sections and direct product tone. Expanded the feature grid from five to six concise cards so photo sharing and 3D route videos have distinct descriptions while retaining records, goals, readiness, and shoe mileage.
+- Used feature-specific Korean/English wording, including running stats on photos and running shoe mileage, without adding blog articles or unsupported device claims.
+- Added two FAQs covering sample runs before Health permission and the route-data requirement for Flyover.
+- Set the six-card grid to three desktop columns, two tablet columns, and one mobile column, and refreshed shared stylesheet cache references.
+- Validation: Korean/English Chrome at 320/390/1280px passed (six cases), with six feature cards, no horizontal overflow, no broken images or page errors, and working FAQ expansion. Inspected Korean desktop and English narrow-mobile captures. Verified six FAQs per page, preserved links/headings/JSON-LD, matching English fallback content, exact runmoa naming, and absence of unsupported third-party device claims.

@@ -106,7 +106,7 @@ html[lang="en"] .hero-visual { display: none; }
   margin-bottom: 0; font-size: clamp(2.2rem, 4.5vw, 4rem); line-height: 1.12;
 }
 .feature-list {
-  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 .feature-item { padding: 24px 18px 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
@@ -152,7 +152,6 @@ html[lang="en"] .hero-visual { display: none; }
   .feature-list { grid-template-columns: repeat(2, 1fr); }
   .feature-item { border-bottom: 1px solid var(--line); }
   .feature-item:nth-child(2n) { border-right: 1px solid var(--line); }
-  .feature-item:last-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 760px) {
