@@ -89,6 +89,13 @@ p { overflow-wrap: break-word; }
   font-size: clamp(3rem, 6vw, 5.6rem); line-height: 1.1; font-weight: 750;
 }
 .hero h1 span { color: var(--text); }
+.hero-app-name { display: block; }
+.hero-tagline {
+  display: block; margin-top: 20px;
+  font-size: clamp(1.25rem, 3vw, 2rem); line-height: 1.4;
+  font-weight: 600; letter-spacing: -0.035em;
+}
+.hero-tagline > span { display: block; }
 .hero-copy { max-width: 620px; margin: 0 0 32px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.2rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-note { margin: 16px 0 0; color: var(--muted); font-size: 0.88rem; }

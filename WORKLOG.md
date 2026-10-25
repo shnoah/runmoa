@@ -39,3 +39,11 @@
 - Set the six-card grid to three desktop columns, two tablet columns, and one mobile column, and refreshed shared stylesheet cache references.
 - Validation: Korean/English Chrome at 320/390/1280px passed (six cases), with six feature cards, no horizontal overflow, no broken images or page errors, and working FAQ expansion. Inspected Korean desktop and English narrow-mobile captures. Verified six FAQs per page, preserved links/headings/JSON-LD, matching English fallback content, exact runmoa naming, and absence of unsupported third-party device claims.
 - Visual review found the Korean desktop hero's automatic image column could compress the text to near zero despite no document overflow. Set an explicit responsive image-column limit and let the English text-only hero span its grid. Rechecked all six cases with a minimum text-column-width assertion; Korean desktop text is about 738px wide and mobile text is 292/362px. Final desktop capture was inspected.
+
+## 2026-10-25 — Separate the hero name and supporting headline
+
+- At the user's request, the hero uses `Runmoa` while keeping its existing responsive font size. Korean supporting lines read `더 편하고 쉬운` and `iPhone 러닝 기록 앱` in smaller text.
+- Applied the same hierarchy to English and the root fallback with `Simpler, easier` and `Running records for iPhone`.
+- Preserved the descriptive search titles and metadata, existing sections, and product behavior. Other product-name references keep the existing `runmoa` spelling; this case change is scoped to the hero.
+- Updated introduction footer dates and refreshed shared stylesheet cache references.
+- Validation: Korean/English Chrome at 320/390/1280px passed. The app name retains 42.4/46.8/76.8px at those widths, while the supporting text is 20/20/32px and stays on exactly two lines. No horizontal overflow; six features and FAQs and one h1 remain. Inspected Korean mobile/desktop captures; search metadata is unchanged except the stylesheet cache version.
