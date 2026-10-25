@@ -47,3 +47,9 @@
 - Preserved the descriptive search titles and metadata, existing sections, and product behavior. Other product-name references keep the existing `runmoa` spelling; this case change is scoped to the hero.
 - Updated introduction footer dates and refreshed shared stylesheet cache references.
 - Validation: Korean/English Chrome at 320/390/1280px passed. The app name retains 42.4/46.8/76.8px at those widths, while the supporting text is 20/20/32px and stays on exactly two lines. No horizontal overflow; six features and FAQs and one h1 remain. Inspected Korean mobile/desktop captures; search metadata is unchanged except the stylesheet cache version.
+
+## 2026-10-25 — Put feature numbers and titles on the same row
+
+- Placed each numbered badge beside its feature title with a 10px gap; descriptions remain below across the card width.
+- Applied the shared layout to Korean, English, and the root fallback while preserving copy, title sizes, hero styling, and card order. Removed the badge's previous 24px bottom margin and refreshed stylesheet cache references.
+- Validation: all six cards in Korean/English at 320/390/1280px show single-line titles beside the badge, vertically centered with a 10px gap; descriptions sit below, and there is no horizontal overflow. Inspected the Korean mobile capture. HTML copy and structure are byte-identical except for stylesheet cache references.

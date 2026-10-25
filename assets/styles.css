@@ -117,11 +117,11 @@ html[lang="en"] .hero { grid-template-columns: minmax(0, 1fr); }
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
-.feature-item { padding: 24px 18px 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.feature-item { display: grid; grid-template-columns: 32px minmax(0, 1fr); column-gap: 10px; row-gap: 12px; align-content: start; align-items: center; padding: 24px 18px 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
 .feature-item:last-child { border-right: 1px solid var(--line); }
-.feature-index { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-bottom: 24px; border-radius: 10px; background: rgba(107, 194, 255, 0.10); color: var(--accent); font-size: 0.78rem; font-weight: 650; font-variant-numeric: tabular-nums; }
-.feature-item h3 { margin-bottom: 10px; font-size: 1.08rem; line-height: 1.35; }
-.feature-item p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+.feature-index { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: 0; border-radius: 10px; background: rgba(107, 194, 255, 0.10); color: var(--accent); font-size: 0.78rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.feature-item h3 { margin: 0; font-size: 1.08rem; line-height: 1.35; }
+.feature-item p { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 0.94rem; }
 
 .faq-section { max-width: 940px; }
 .faq-list { border: 1px solid var(--line); border-radius: 20px; padding: 0 20px; background: var(--surface); }
