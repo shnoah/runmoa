@@ -53,3 +53,10 @@
 - Placed each numbered badge beside its feature title with a 10px gap; descriptions remain below across the card width.
 - Applied the shared layout to Korean, English, and the root fallback while preserving copy, title sizes, hero styling, and card order. Removed the badge's previous 24px bottom margin and refreshed stylesheet cache references.
 - Validation: all six cards in Korean/English at 320/390/1280px show single-line titles beside the badge, vertically centered with a 10px gap; descriptions sit below, and there is no horizontal overflow. Inspected the Korean mobile capture. HTML copy and structure are byte-identical except for stylesheet cache references.
+
+## 2026-10-25 — Remove notices menus and content
+
+- Removed Korean and English notice pages and the root language-routing notice page, including their old release announcements.
+- Removed notice links from introduction footers, support pages, privacy-page footers, and the 404 page; removed notice URLs from the sitemap.
+- Old notice routes now resolve as missing pages rather than displaying announcements or redirecting into the deleted section. Historical work-log entries are retained; privacy policy text and app behavior are unchanged.
+- Validation: no notice menu/content references remain in served HTML; all 67 remaining local links resolve to existing files/pages; sitemap XML contains six remaining URLs. Local HTTP checks confirm all three notice routes return 404 and the six Korean/English home/support/privacy routes return 200. Privacy documents differ only by removed navigation links. Diff checks passed; no new browser visual validation was needed for this removal.
