@@ -1,16 +1,14 @@
-# RunMoa Privacy Policy
+# RunMoa Privacy Policy / 개인정보처리방침
 
-Last updated: August 13, 2026
+Effective / 시행일: October 29, 2026 / 2026년 10월 29일
 
-- English: <https://shnoah.github.io/runmoa/en/privacy/>
-- 한국어: <https://shnoah.github.io/runmoa/ko/privacy/>
+- [English policy](https://shnoah.github.io/runmoa/en/privacy/)
+- [한국어 개인정보처리방침](https://shnoah.github.io/runmoa/ko/privacy/)
 
-RunMoa reads Apple Health running workouts on the iPhone. It does not upload Apple Health workout data, route coordinates, heart rate samples, run notes, shoe data, selected photos, or finished images to a developer server.
+Operator and privacy officer / 운영자 및 개인정보 보호책임자: Seungho Noah (individual developer / 개인 개발자).
 
-For an outdoor run with an Apple Health route, RunMoa may send the first valid route coordinate and run start time to Apple Maps for a concise location name and to Apple Weather through WeatherKit for historical hourly weather. The representative coordinate is not stored in the location and weather cache and is not sent to Firebase, Crashlytics, AdMob, or a developer server.
+Contact / 문의: pnr.run.apps@gmail.com · +82 10 5120 8808
 
-Distributed builds use Firebase Analytics and Crashlytics for usage statistics and diagnostics and display Google AdMob banners on Run Detail and Sticker Editing screens. Google may process approximate location, device identifiers, advertising data, product interactions, crash data, performance data, and other diagnostics. Where required, RunMoa requests consent and App Tracking Transparency permission before loading ads.
+The full policies describe current Apple Health, iCloud, analytics and advertising behavior and the operating commitments for Garmin integration, which remains in development. Publishing the policy does not enable Garmin data ingestion.
 
-RunMoa never includes Apple Health workouts, routes, heart rate, pace, cadence, elevation, run notes, shoe data, or photos in ad requests or uses them for advertising or targeting.
-
-For the full localized policy, use one of the links above.
+전체 방침은 현재 Apple 건강·iCloud·분석·광고 처리와 개발 중인 Garmin 연동의 운영 원칙을 설명합니다. 방침 게시만으로 Garmin 데이터 수신이 활성화되지는 않습니다.

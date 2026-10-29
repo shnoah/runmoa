@@ -60,3 +60,11 @@
 - Removed notice links from introduction footers, support pages, privacy-page footers, and the 404 page; removed notice URLs from the sitemap.
 - Old notice routes now resolve as missing pages rather than displaying announcements or redirecting into the deleted section. Historical work-log entries are retained; privacy policy text and app behavior are unchanged.
 - Validation: no notice menu/content references remain in served HTML; all 67 remaining local links resolve to existing files/pages; sitemap XML contains six remaining URLs. Local HTTP checks confirm all three notice routes return 404 and the six Korean/English home/support/privacy routes return 200. Privacy documents differ only by removed navigation links. Diff checks passed; no new browser visual validation was needed for this removal.
+
+
+## 2026-10-29 Garmin registration assets and privacy policy
+
+- Published the existing RunMoa logo as a 300×300 PNG at assets/runmoa-300.png for Garmin app registration.
+- Updated Korean and English policies with confirmed individual operator/privacy officer Seungho Noah and public contact details, optional iCloud backup, the selected Garmin delivery/retention/deletion plan, separate sensitive-data consent, provider disclosures, and current Cloud logging settings. Garmin integration remains in development and ingestion is disabled.
+- Preserved the website header, navigation and stylesheet. Updated privacy language entry and Markdown policy entry. No other home-page content changed.
+- Changes were explicitly requested by the operator. The policy does not claim that unimplemented Garmin controls are already operating or that all processing takes place in Korea.

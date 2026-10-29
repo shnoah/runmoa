@@ -13,6 +13,7 @@
   <meta property="og:image" content="https://shnoah.github.io/runmoa/assets/runmoa-icon.png">
   <link rel="icon" href="../../assets/runmoa-icon.png">
   <link rel="stylesheet" href="../../assets/styles.css?v=8">
+  <style>.document-section{overflow-wrap:anywhere}.document-section li+li{margin-top:12px}</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,66 +27,68 @@
     <header class="document-hero">
       <p class="eyebrow">PRIVACY</p>
       <h1>RunMoa Privacy Policy</h1>
-      <p class="updated">Last updated: August 13, 2026</p>
+      <p class="updated">Effective: October 29, 2026</p>
       <p>RunMoa reads running workouts from Apple Health and presents them in a runner-focused format on your iPhone.</p>
+<p>October 29, 2026 revision: added or clarified operator contacts, optional iCloud backup, Garmin operating commitments and service-provider disclosures. Direct Garmin integration is not yet available.</p>
     </header>
-    <section class="document-section">
-      <h2>Overview</h2>
-      <p>No account is required. RunMoa does not upload Apple Health running data, route coordinates, heart rate samples, run notes, shoe data, selected photos, or finished images to a developer server.</p>
-      <p>Distributed builds use Firebase Analytics and Crashlytics for usage statistics and diagnostics and display Google AdMob banner ads on Run Detail and Sticker Editing screens.</p>
-    </section>
-    <section class="document-section">
-      <h2>Advertising and tracking</h2>
-      <p>Google Mobile Ads and User Messaging Platform may process IP-derived approximate location, device identifiers, advertising data, product interactions, crash data, performance data, and other diagnostics to provide and measure ads and for analytics.</p>
-      <p>Where required, RunMoa presents Google's consent message and Apple's App Tracking Transparency request before requesting ads. If you allow personalized advertising and tracking, an advertising identifier may be used to link activity across apps and websites. If you decline, Google may provide non-personalized or limited ads when permitted. Available choices can be changed from More &gt; Data &amp; Privacy in RunMoa Settings, and tracking permission can be managed in iOS Settings.</p>
-      <p>RunMoa never includes Apple Health workouts, route coordinates, heart rate, pace, cadence, elevation, run notes, shoe data, or photos in ad requests or uses them for advertising or targeting. The Google Mobile Ads publisher first-party identifier is disabled.</p>
-    </section>
-    <section class="document-section">
-      <h2>Health data we read</h2>
-      <ul>
-        <li>Running workouts and routes</li>
-        <li>Heart rate and resting heart rate</li>
-        <li>VO₂ Max</li>
-        <li>Walking/running distance and step count</li>
-        <li>Running speed and stride length</li>
-        <li>Workout effort on supported systems</li>
-      </ul>
-      <p>This data is processed on device for summaries, running condition estimates, heart rate zones, charts, personal records, shoe assignments, and sharing layouts, except for the Apple service request described below.</p>
-    </section>
-    <section class="document-section">
-      <h2>Apple Maps and Weather services</h2>
-      <p>For an outdoor run with an Apple Health route, RunMoa may send the first valid route coordinate and the run start time to Apple Maps for a concise location name and to Apple Weather through WeatherKit for historical hourly weather. RunMoa does not request current-location permission. Weather is omitted when the route, eligible historical weather, or required Apple Weather attribution is unavailable.</p>
-      <p>Only the resulting display location and weather values are cached on the iPhone. The representative coordinate is not stored in this cache and is not sent to Firebase, Crashlytics, AdMob, or a developer server. Apple's handling of these service requests is governed by Apple's applicable privacy terms.</p>
-    </section>
-    <section class="document-section">
-      <h2>Data stored on device</h2>
-      <p>Settings, heart rate zone preferences, shoe information and assignments, run notes, personal record review results, derived summary and chart caches, and up to 100 display-only location and weather cache entries are stored in the protected app container and excluded from automatic iCloud/Finder backup. Original route coordinates are not stored in the location and weather cache.</p>
-    </section>
-    <section class="document-section">
-      <h2>Photos and exports</h2>
-      <p>The iOS system photo picker provides only the photo you select. Photo and sticker composition happens on device. Add-only Photos permission is requested only when you save a finished image. Images and personal backup JSON files leave the app only when you explicitly copy, save, or share them. Personal backups can contain shoe data and display order, run-to-shoe links, notes you wrote, detail metric settings, and monthly or weekly mileage-goal settings; they do not contain Apple Health originals or derived analysis caches.</p>
-    </section>
-    <section class="document-section">
-      <h2>Firebase</h2>
-      <p>Firebase Analytics and Crashlytics may process identifiers, product interactions, crash reports, performance data, device and operating system information, app version, and diagnostic metadata. RunMoa does not attach Apple Health workout details, route coordinates, heart rate samples, run notes, shoe data, location or weather values, or photos to Firebase reports.</p>
-    </section>
-    <section class="document-section">
-      <h2>Your controls</h2>
-      <ul>
-        <li>Revoke Apple Health access or tracking permission in iOS Settings.</li>
-        <li>Change available advertising consent choices in More &gt; Data &amp; Privacy.</li>
-        <li>Delete shoe data and clear derived caches.</li>
-        <li>Export or import a personal backup.</li>
-        <li>Delete the app to remove app-local data.</li>
-      </ul>
-    </section>
-    <section class="document-section">
-      <h2>Contact</h2>
-      <p><a href="mailto:pnr.run.apps@gmail.com">pnr.run.apps@gmail.com</a></p>
-    </section>
+<section class="document-section"><h2>Overview</h2><p>No account is required. RunMoa does not upload Apple Health running data, routes, heart rate samples, run notes, shoe data, selected photos, or finished images to a developer server.</p>
+<p>Distributed builds use Firebase Analytics and Crashlytics for usage statistics and diagnostics. RunMoa also displays Google AdMob banner ads on Run Detail and Sticker Editing screens.</p></section>
+<section class="document-section"><h2>Advertising and tracking</h2><p>Google Mobile Ads and User Messaging Platform may process IP-derived approximate location, device identifiers, advertising data, product interactions, crash data, performance data, and other diagnostics to provide and measure ads and for analytics.</p>
+<p>Where required, RunMoa presents Google's consent message and Apple's App Tracking Transparency request before requesting ads. If you allow personalized ads and tracking, an advertising identifier may be used to link activity across apps and websites. If you decline, Google may provide non-personalized or limited ads when permitted. You can change available choices from More &gt; Data Management and manage tracking permission in iOS Settings.</p>
+<p>RunMoa never includes Apple Health workouts, route coordinates, heart rate, pace, cadence, elevation, notes, shoes, or photos in ad requests or uses them for advertising or targeting. The Google Mobile Ads publisher first-party identifier is disabled.</p></section>
+<section class="document-section"><h2>Health data we read</h2><ul><li>Running workouts and routes</li>
+<li>Heart rate and resting heart rate</li>
+<li>VO₂ Max</li>
+<li>Walking/running distance and step count</li>
+<li>Running speed and stride length</li>
+<li>Workout effort on supported systems</li></ul><p>This data is processed on device for summaries, condition estimates, heart rate zones, charts, personal records, shoe assignments, and sharing layouts, except for the Apple service request described below.</p></section>
+<section class="document-section"><h2>Apple Maps and Weather services</h2><p>For an outdoor run with an Apple Health route, RunMoa may send the first valid route coordinate and the run start time to Apple Maps and Apple Weather to resolve a concise location name and historical hourly weather. It does not request current-location permission. Weather is omitted when the route, eligible history, or required Apple Weather attribution is unavailable.</p>
+<p>Only the resulting display location and weather values are cached on the iPhone. The representative coordinate is not stored in this cache or sent to Firebase, Crashlytics, AdMob, or a developer server. Apple's handling of these service requests is governed by Apple's applicable privacy terms.</p></section>
+<section class="document-section"><h2>Data stored on device</h2><p>Settings, heart rate zone preferences, shoe information and assignments, run notes, personal record review results, derived summary/chart caches, and up to 100 display-only location/weather cache entries are stored in the app container with file protection and excluded from automatic iCloud/Finder backup. Original route coordinates are not stored in the location/weather cache.</p></section>
+<section class="document-section"><h2>User-initiated iCloud personal backup</h2><p>When you choose <code>Back Up to iCloud Now</code>, RunMoa stores one current snapshot of shoe information and display order, run-to-shoe links, notes you wrote, and monthly/weekly goal settings in your CloudKit private database. Restore this backup in More &gt; Data Management &gt; Backup &amp; Restore, or delete it under Manage iCloud Backup on that screen. RunMoa does not perform automatic or continuous synchronization.</p>
+<p>Run links and notes store an app-domain one-way opaque reference instead of the raw HealthKit workout UUID. Apple Health workout dates, distance, duration, routes, heart rate, pace, samples, sources, personal records, and derived analysis caches are excluded. If a workout with the same identifier is not yet on the device, its link or note remains pending locally; RunMoa does not guess a match from date, distance, or duration.</p>
+<p>The backup is stored as an encrypted asset in the user's CloudKit private database and is not sent to a developer-operated server, Firebase, Crashlytics, Google Mobile Ads, or an advertising or analytics service.</p></section>
+<section class="document-section"><h2>Photos and exports</h2><p>The iOS system photo picker provides only the photo you select. Photo and sticker composition happens on device. Add-only Photos permission is requested only when you save a finished image. Images and personal backup JSON files leave the app only when you explicitly copy, save, or share them.</p>
+<p>detailMapCard hides the first and last 200 meters of its route by default. You can choose Full Route for the current editing session; that exported image may reveal the run's start and end locations as well as street or neighborhood names shown by Apple Maps.</p>
+<p>Personal backups can contain shoe data and display order, run-to-shoe links, notes you wrote, and monthly or weekly mileage-goal settings; they do not contain Apple Health originals or derived analysis caches.</p></section>
+<section class="document-section"><h2>Firebase</h2><p>Firebase Analytics and Crashlytics may collect identifiers, product interactions, crash reports, performance data, device and OS information, app version, and diagnostic metadata. RunMoa does not attach Apple Health workout details, routes, heart rate samples, notes, shoes, location/weather values, or photos to Firebase reports.</p></section>
+<section class="document-section"><h2>Your controls</h2><ul><li>Revoke Apple Health access or tracking permission in iOS Settings.</li>
+<li>Change available advertising consent choices in More &gt; Data Management.</li>
+<li>Reset shoes, notes, and goals or clear analysis caches in More &gt; Data Management &gt; Data Maintenance &amp; Reset.</li>
+<li>Export or import a personal backup file.</li>
+<li>Create, restore, or delete your private iCloud personal backup.</li>
+<li>Delete the app to remove app-local data. A separately created iCloud backup can be removed with the in-app delete action.</li></ul></section>
+<section class="document-section"><h2>Flyover videos</h2><p>Flyover creates a silent video of your route and metrics on your device and adds it to Photos only when you choose Save. Flyover videos show the full route, including its start and end. Displaying maps and creating videos loads the corresponding map areas from Apple Maps. Video rendering does not upload its inputs or finished video. The planned Garmin delivery described below is a separate server transfer; activity inputs are never sent to analytics, crash reporting or advertising services. Flyover preferences and temporary videos are excluded from personal-data backups.</p></section>
+<p class="updated">This policy describes the available app features and the Garmin operating commitments below. Direct Garmin integration remains in development and does not yet receive activity data.</p>
+<section class="document-section" id="garmin-0"><h2>Direct Garmin integration — in development</h2><p>Direct Garmin integration is in development and is not available to users. Garmin authorization and activity ingestion are currently disabled on the server. This section describes the selected operating plan, not features already provided. Required notices, consent procedures, deletion and rights-request controls will be implemented before receiving real Garmin data.</p>
+<p>Existing RunMoa features do not require a separate account. Garmin integration will be optional; declining it will not prevent use of existing Apple Health features. We plan to use Garmin Connect authorization without separate RunMoa sign-up. RunMoa will not collect your Garmin password.</p></section>
+<section class="document-section" id="garmin-1"><h2>Garmin data categories and purposes</h2><p>Within the permissions you grant in Garmin Connect, we plan to process your Garmin user identifier; activity identifiers, type and name; start time, duration, distance and calories; pace, speed, heart rate, cadence, elevation, routes, laps and supported sensor samples; recording-device information; and sharing permissions. Availability depends on the device, activity and permissions. Access and refresh tokens and connection status will also be processed to maintain the connection.</p>
+<p>Purposes are to show your runs and activity details, calculate mileage and goal progress, prevent double-counting, and create running images and route replay videos that you explicitly request. We will not separately request names, email addresses or daily wellness data for the Garmin integration.</p>
+<p>Garmin data will pass from Garmin through RunMoa-controlled Google Firebase/Google Cloud servers to your iPhone. Temporary server storage is off-device processing. Apple Health originals, on-device analysis caches, and the existing shoes, notes and goals backup will not be uploaded to the Garmin delivery server.</p></section>
+<section class="document-section" id="garmin-2"><h2>Garmin retention and deletion</h2><p>The server will provide temporary activity delivery. Once the app confirms durable storage on the device, the corresponding server activity originals, details and summaries will be deleted without undue delay. Undelivered activities will be deleted no later than 30 days after initial receipt. Duplicate notifications will not extend this period.</p>
+<p>Garmin connection identifiers, permissions, access and refresh tokens will be kept only while needed to maintain the connection and deleted on disconnection. Downloaded activities may remain on the device until you delete them, independently of the server retention period.</p>
+<p>Deletion procedures will remove electronic files and database records so they cannot be restored or provided again. The server will not be a backup for restoring your entire activity history. After reinstallation or on a new device, Garmin must be connected again; previously deleted server activities are not guaranteed to be recoverable.</p>
+<p>The Garmin integration will retain routine operational logs for 30 days and separate administrator access security records for two years. Logs will exclude activity payloads, routes, heart-rate samples, authorization codes and tokens. Security records will contain only administrator identifiers, access times and origins, minimal identifiers of affected records and actions performed, for security rather than marketing. We will not create separate recovery backups or long-term copies of Garmin activities. These controls will be applied before activity ingestion is enabled.</p></section>
+<section class="document-section" id="garmin-3"><h2>Garmin disconnection and your rights</h2><p>When integration is offered, we will provide controls to disconnect Garmin and request server data deletion. Disconnection will trigger Garmin deregistration, stop new ingestion and delete server activities, tokens and connection records. You will be able to keep or delete activities already downloaded to the device. You can also change permissions or disconnect in Garmin Connect.</p>
+<p>Deleting the app alone must not be assumed to immediately disconnect Garmin or delete server data. Instructions will explain how to disconnect before deletion or contact us. Separately created private iCloud backups and files exported to Photos or other apps must be managed in those locations.</p>
+<p>For access, correction, deletion, restriction of processing, withdrawal of consent or a copy of available data, contact pnr.run.apps@gmail.com. We will verify identity using only the minimum necessary information, without asking you to email Garmin passwords, authorization tokens or entire workout files. Requests by legal representatives or authorized agents will be handled through the applicable procedures.</p>
+<p>Corrections to Garmin originals may need to be made in Garmin Connect. RunMoa does not promise editing capabilities unavailable from the source provider. We will explain the scope of corrections or deletions and any lawful restrictions, and establish procedures to handle requests without undue delay and communicate the outcome.</p></section>
+<section class="document-section" id="garmin-4"><h2>Service providers, external sharing and international transfers</h2><p>We plan to use Google Firebase and Google Cloud for Garmin server-side authorization, delivery and temporary storage. This processing is separate from attaching activity data to Firebase Analytics or Crashlytics. It is also separate from the roles of Apple Maps and Weather, iCloud/CloudKit and existing Google analytics, diagnostics and advertising services.</p>
+<p>Apple Health and Garmin activity data will not be sold or used for ad targeting. Garmin activity payloads, routes, heart rate, connection identifiers and tokens will not be sent to advertising, analytics, crash-reporting or AI services. Garmin data and derived data will not be used to train, evaluate or improve AI models. Images, videos or files you explicitly choose to share may contain your own activity information.</p>
+<p>The selected execution region for the Garmin function is Seoul, South Korea. This does not guarantee that all Google, Garmin, Apple or existing SDK processing and storage occurs in Korea. Before enabling integration, we will verify providers, legal entities, processing tasks, contacts and any international transfers. Where transfers occur, we will disclose the applicable basis, categories, countries, timing, methods, recipients, purposes, retention, and refusal procedures and consequences, and meet the applicable legal requirements, including separate consent where required.</p></section>
+<section class="document-section" id="garmin-5"><h2>Health information consent and safeguards</h2><p>Before enabling Garmin integration, we will obtain consent to personal-data processing and separate consent for sensitive health information such as heart rate. Each consent will explain categories, purposes, retention and the effects of refusal. Refusing or withdrawing consent prevents use of the Garmin integration but does not affect existing Apple Health features. Advertising and tracking consent will not be bundled with Garmin connection consent.</p>
+<p>Before enabling integration, we will implement and verify user-specific access controls, protected transport, secret and token protection, least privilege, administrator access management, retention-based deletion and incident response. Provider and subprocessor arrangements will be checked against the actual system and contracts. Direct Garmin integration will be available only to people aged 14 or older.</p></section>
+<section class="document-section" id="providers"><h2>Service providers and website</h2><ul><li><strong>Google Firebase / Google Cloud:</strong> Planned processors for Garmin authorization, delivery, temporary storage and security operations. Google's published terms identify Google Cloud Korea LLC and Google Asia Pacific Pte. Ltd. and relevant affiliates for Cloud services with Korean billing addresses. The current Garmin execution region is Seoul; activity ingestion is disabled. See <a href="https://cloud.google.com/terms/google-entity">contracting entities</a>, <a href="https://cloud.google.com/terms/subprocessors">subprocessors and processing countries</a>, and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
+<li><strong>Google Analytics, Firebase Crashlytics, Google AdMob / UMP:</strong> Process the usage, diagnostic and advertising information described above. Garmin activity data is not sent to these services. Under Google's policy, Crashlytics starts deleting crash reports and associated identifiers after 90 days. Analytics and advertising retention and deletion follow their applicable settings and policies; the Garmin activity 30-day limit does not apply to them. See <a href="https://policies.google.com/privacy">Google privacy and contact information</a> and <a href="https://support.google.com/analytics/answer/7667196">Analytics retention</a>.</li>
+<li><strong>Apple:</strong> Handles Apple Maps and Weather requests and the private iCloud/CloudKit backup you choose, within the request and backup scope described here. See <a href="https://www.apple.com/legal/privacy/">Apple privacy and rights information</a>.</li>
+<li><strong>Garmin:</strong> Provides the Garmin Connect account connection and source activities you authorize. Your Garmin account itself is governed by the <a href="https://www.garmin.com/en-US/privacy/connect/">Garmin Connect privacy policy</a>.</li>
+<li><strong>GitHub Pages (GitHub, Inc.):</strong> Hosts this public website, logo and policy. IP addresses and request information may be processed when these resources are requested. Garmin activities and tokens are not stored here. The website stores language preferences in browser localStorage; clear site data in your browser to remove them. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy information</a>.</li>
+<li><strong>Google Gmail:</strong> Processes the sender address and content of inquiries you send us. We use them to respond and handle rights requests, retain them for one year after resolution, and then delete them. Any legally required separate retention will be explained with its basis and period. Do not send passwords, authorization tokens or entire workout files.</li></ul><p>Server requests can include technical information such as IP address, time, request URL, status code and user agent. Current foundation-server retention settings are 30 days for routine logs and 400 days for Google Cloud required audit logs. These are separate from Garmin activity storage, which is not active. We do not represent all international infrastructure and support processing as occurring exclusively in Seoul.</p></section>
+<section class="document-section" id="garmin-6"><h2>Contact and policy changes</h2><p>RunMoa operator and privacy officer: Seungho Noah, an individual developer. Email: <a href="mailto:pnr.run.apps@gmail.com">pnr.run.apps@gmail.com</a>. Phone: <a href="tel:+821051208808">+82 10 5120 8808</a>. Contact us for privacy inquiries, complaints and rights requests.</p>
+<p>Changes to processing purposes, categories, retention or providers will be announced with their effective date. Changes requiring additional consent will be applied only after obtaining it. We will announce Garmin availability and additional connection notices before offering the feature. Publication of this policy does not itself authorize a Garmin connection or constitute consent to data collection.</p></section>
   </main>
   <footer class="site-footer">
-    <div class="footer-shell"><div><a class="brand" href="../"><span>RunMoa</span></a><div class="footer-meta">Updated August 13, 2026</div></div><div class="footer-links"><a href="../">Home</a><a href="../support/">Support</a><a href="./">Privacy</a></div></div>
+    <div class="footer-shell"><div><a class="brand" href="../"><span>RunMoa</span></a><div class="footer-meta">Updated October 29, 2026</div></div><div class="footer-links"><a href="../">Home</a><a href="../support/">Support</a><a href="./">Privacy</a></div></div>
   </footer>
 </body>
 </html>
