@@ -1,5 +1,12 @@
 # RunMoa public website work log
 
+## 2026-11-08 — Publish the Garmin-era privacy policy (Claude Code)
+
+- At the user's request, replaced the Korean and English privacy policies with the November 8, 2026 revision for RunMoa 1.3.0: the Direct Garmin integration is described as offered (no longer "in development"), with current categories, purposes, retention, operational diagnostics, international processing, consent and safeguards.
+- Added that user-initiated iCloud personal backups (CloudKit private database) and backup files include runs received from Garmin, and that earlier Garmin runs can be restored only from such a backup. Corrected the in-app menu path to More > Data Management > Import Runs > Garmin.
+- Source: `docs/GARMIN_PRIVACY_POLICY_KO.md` / `_EN.md` in the app repository. Existing section anchors (`garmin-0`…`garmin-6`, `providers`) and outbound links are kept; a new `garmin-diagnostics` section was added. Header, navigation, styles and footer structure are unchanged; footer dates updated.
+- Validation: HTML tag balance, no draft or internal notes, no horizontal overflow at 390px, Korean and English pages rendered locally.
+
 ## 2026-10-23 — Introduction copy refresh
 
 - Updated Korean, English, and the root English fallback introduction to describe Apple Health run review, monthly/weekly goals, shoe mileage, stickers, photo compositions, and Flyover route videos.
