@@ -1,3 +1,8 @@
+## 2026-11-18 Garmin 개인정보 안내 경로 수정 [Codex]
+
+- 작성: Codex
+- 한영 개인정보처리방침의 Garmin 연결 해제 안내를 앱·기기 연결 / Apps & Devices 경로로 수정. 언어별 2곳, 로컬 RunOnly 방침과 동일함을 확인했다.
+
 # RunMoa public website work log
 
 ## 2026-11-08 — Publish the Garmin-era privacy policy (Claude Code)
